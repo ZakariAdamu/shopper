@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input";
 const SignUpForms = () => {
 	const [currentChild, setCurrentChild] = useState(true);
 
-	const handleNext = (e: any) => {
+	const handleNext = () => {
 		setCurrentChild((prev) => !prev);
 	};
 	return (
