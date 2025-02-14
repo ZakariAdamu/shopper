@@ -81,3 +81,33 @@ body {
 
 
 /* Media queries */
+@media screen and (min-width: 348px) {
+  .navbar .right {
+    margin-right: 2rem;
+
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .google-btn {
+    margin-right: auto;
+    /* margin-left: 10px; */
+    width: 80vw;
+
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .google-btn {
+    margin-right: auto;
+    margin-left: 10px;
+    width: 75vw;
+
+  }
+
+}

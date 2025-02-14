@@ -9,7 +9,7 @@ const LandingPage = () => {
 				alt="banner"
 				width={1900}
 				height={850}
-				className="w-screen mt-10 lg:mt-4 min-w-[300px] min-h-[250px] lg:min-w-[500px]"
+				className="w-screen mt-10 lg:mt-4 min-w-[300px] min-h-[250px] lg:min-w-[500px] rounded-3xl"
 			/>
 		</div>
 	);

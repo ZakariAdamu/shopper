@@ -34,13 +34,23 @@ const SignUpForms = () => {
 						</CardHeader>
 
 						<CardContent className="px-2 sm:px-6">
-							<div className="flex my-2 justify-evenly mx-auto items-center">
+							<div className="flex my-2 justify-center mx-auto items-center">
+								{/* <Button
+									disabled={false}
+									onClick={() => {}}
+									variant="outline"
+									size="lg"
+									className="hover:bg-slate-200 border-gray-600 py-2 rounded-full w-fit min-w-[300px] -ml-4 mr-auto sm:ml-auto"
+								>
+									<FcGoogle className="size-12 left-2.5 top-2.5" /> Login with
+									Google
+								</Button> */}
 								<Button
 									disabled={false}
 									onClick={() => {}}
 									variant="outline"
 									size="lg"
-									className="hover:bg-slate-200 border-gray-600 w-full rounded-full"
+									className="google-btn hover:bg-slate-200 border-gray-600 py-2 rounded-full w-fit min-w-[300px] self-center -ml-4 mr-auto"
 								>
 									<FcGoogle className="size-12 left-2.5 top-2.5" /> Login with
 									Google

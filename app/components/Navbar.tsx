@@ -47,10 +47,13 @@ const Navbar = () => {
 				</div>
 			</div>
 			{/* Mobile display */}
-			<div className="sticky top-0 py-2 px-10 gap-2 flex items-center justify-end  lg:hidden">
-				<CircleUser className="border-slate-400" />
+			<div className="navbar flex items-center justify-evenly min-w-[300px] p-3 lg:hidden">
+				<div className="left"></div>
+				<div className="right flex items-center justify-end w-full gap-2 p-2">
+					<CircleUser className="border-slate-400" />
 
-				<Menu className="cursor-pointer lg:hidden border-slate-400" />
+					<Menu className="cursor-pointer lg:hidden border-slate-400" />
+				</div>
 			</div>
 		</header>
 	);
