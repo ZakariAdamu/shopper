@@ -1,10 +1,10 @@
-import TestForm from "../components/TestForm";
+import LandingPage from "../components/LandingPage";
 
 const StorePage = () => {
 	return (
 		<div>
 			<h1>Store Page</h1>
-			<TestForm />
+			<LandingPage />{" "}
 		</div>
 	);
 };
