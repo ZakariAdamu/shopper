@@ -1,17 +1,15 @@
 import Footer from "./components/Footer";
+import DesktopLogins from "./components/DesktopLogins";
 import LandingPage from "./components/LandingPage";
-import SignUpForms from "./components/SignUpForms";
 
 export default function Home() {
 	return (
-		<>
-			<div className="mx-10 relative">
-				<LandingPage />
-				<div className="absolute min-w-[300px] w-full left-[3%] top-[83%] lg:top-[41%] lg:left-[5%] -z-10 lg:z-0">
-					<SignUpForms />
-				</div>
+		<div className="relative">
+			<LandingPage />
+			<div className="absolute left-[5rem] xl:left-[19%] top-[41%] 2xl:left-[23%]">
+				<DesktopLogins />
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 }

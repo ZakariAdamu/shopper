@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Comfortaa } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
@@ -12,6 +13,11 @@ const geistMono = localFont({
 	src: "./fonts/GeistMonoVF.woff",
 	variable: "--font-geist-mono",
 	weight: "100 900",
+});
+const comfortaaFont = Comfortaa({
+	weight: ["300", "700"], // Choose the weights you need
+	subsets: ["latin"], // Choose the subsets you need
+	display: "swap",
 });
 
 import type { Viewport } from "next";
@@ -69,7 +75,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} ${comfortaaFont.className} antialiased`}
 			>
 				<Navbar />
 				{/* <LandingPage /> */}

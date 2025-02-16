@@ -9,13 +9,6 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			transform: {
-				"rotate-y-0": "rotateY(0deg)",
-				"rotate-y-180": "rotateY(180deg)",
-			},
-			perspective: {
-				1000: "1000px",
-			},
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
@@ -68,3 +61,15 @@ const config: Config = {
 	plugins: [require("tailwindcss-animate")],
 };
 export default config;
+function gradient(
+	arg0: number,
+	deg: any,
+	arg2: any,
+	arg3: number,
+	arg4: any,
+	arg5: number,
+	arg6: any,
+	arg7: number
+) {
+	throw new Error("Function not implemented.");
+}
