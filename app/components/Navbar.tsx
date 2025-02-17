@@ -13,7 +13,7 @@ const Navbar = () => {
 			{/* Desktop display */}
 			<div className="hidden lg:flex sticky top-0 py-2 px-10 gap-2 items-center justify-between">
 				{/* Left */}
-				<div className="flex items-center ml-[40%] gap-1">
+				<div className="flex items-center ml-[40%] font-semibold gap-1">
 					<MdLocationPin /> <span>Abuja</span>
 				</div>
 				{/* Right */}
@@ -21,18 +21,18 @@ const Navbar = () => {
 					<div className="flex items-center justify-between gap-10">
 						<Link
 							href="/"
-							className={`hover:text-[#B63B56] py-3 ${
+							className={`hover:text-[#B63B56] py-3 font-semibold ${
 								pathname === "/store" &&
-								"text-[#B63B56] border-b border-b-[#B63B56]"
+								"text-[#B63B56] border-b-2 border-b-[#B63B56]"
 							}`}
 						>
 							Store
 						</Link>
 						<Link
 							href="/login"
-							className={`hover:text-[#B63B56] py-3 ${
+							className={`hover:text-[#B63B56] py-3 font-semibold ${
 								pathname === "/login" &&
-								"text-[#B63B56] border-b border-b-[#B63B56]"
+								"text-[#B63B56] border-b-2 border-b-[#B63B56]"
 							}`}
 						>
 							login
