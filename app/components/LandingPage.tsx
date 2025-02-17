@@ -25,7 +25,7 @@ const LandingPage = () => {
 								alt="banner"
 								width={2000}
 								height={1813}
-								className="rounded-[36px] w-full h-[230px] lg:h-[340px] opacity-60"
+								className="rounded-[36px] w-full h-[230px] lg:h-[340px]"
 							/>
 						</div>
 						{currentChild && (
