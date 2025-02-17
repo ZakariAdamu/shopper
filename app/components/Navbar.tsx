@@ -11,31 +11,37 @@ const Navbar = () => {
 	return (
 		<header>
 			{/* Desktop display */}
-			<div className="hidden lg:flex sticky top-0 py-2 px-10 gap-2 items-center justify-between">
+			<div className="hidden lg:flex sticky top-0 py-2 px-10 gap-2 items-center justify-between mb-0">
 				{/* Left */}
 				<div className="flex items-center ml-[40%] font-semibold gap-1">
 					<MdLocationPin /> <span>Abuja</span>
 				</div>
 				{/* Right */}
 				<div className="right-items w-[45%] flex items-center justify-between">
-					<div className="flex items-center justify-between gap-10">
+					<div className="flex items-center justify-between gap-8">
 						<Link
-							href="/"
-							className={`hover:text-[#B63B56] py-3 font-semibold ${
+							href="/store"
+							className={`hover:text-[#B63B56] relative pt-4 pb-5 font-semibold px-[6px] ${
 								pathname === "/store" &&
-								"text-[#B63B56] border-b-2 border-b-[#B63B56]"
+								"bg-gradient-to-r from-[#C67250] to-[#9B5B9A] bg-clip-text text-transparent font-normal"
 							}`}
 						>
 							Store
+							{pathname === "/store" && (
+								<span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-[#C67250] to-[#9B5B9A]"></span>
+							)}
 						</Link>
 						<Link
 							href="/login"
-							className={`hover:text-[#B63B56] py-3 font-semibold ${
+							className={`hover:text-[#B63B56] relative pt-4 pb-5 font-semibold px-[6px] ${
 								pathname === "/login" &&
-								"text-[#B63B56] border-b-2 border-b-[#B63B56]"
+								"bg-gradient-to-r from-[#C67250] to-[#9B5B9A] bg-clip-text text-transparent font-normal"
 							}`}
 						>
 							login
+							{pathname === "/login" && (
+								<span className="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-[#C67250] to-[#9B5B9A]"></span>
+							)}
 						</Link>
 						<Link
 							href="/"

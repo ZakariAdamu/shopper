@@ -13,7 +13,7 @@ const LandingPage = () => {
 
 	return (
 		<>
-			<section className="hero-section hero-bg bg-gradient-to-b from-cyan-50 via-white to-white w-full h-full py-3 lg:-mt-1 lg:pt-5">
+			<section className="hero-section hero-bg  w-full h-full pt-4 lg:-mt-2 lg:pt-5">
 				<div className="container shadow-white m-auto max-w-2xl lg:max-w-full xl:max-w-5xl lg:px-10 ">
 					<div className="rounded-md m-4 md:m-0">
 						<h2 className="text-md text-left mb-6 bg-transparent font-semibold pt-2 lg:hidden">
@@ -21,11 +21,18 @@ const LandingPage = () => {
 						</h2>
 						<div>
 							<Image
+								src="/shopper-hero-img1.png"
+								alt="banner"
+								width={2000}
+								height={1813}
+								className="rounded-[36px] w-full h-[230px] sm:hidden lg:h-[340px]"
+							/>
+							<Image
 								src="/hero-perfect.png"
 								alt="banner"
 								width={2000}
 								height={1813}
-								className="rounded-[36px] w-full h-[230px] lg:h-[340px]"
+								className="rounded-[36px] w-full h-[230px] hidden sm:flex lg:h-[340px]"
 							/>
 						</div>
 						{currentChild && (

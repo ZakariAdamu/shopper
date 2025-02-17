@@ -3,7 +3,7 @@ import LandingPage from "../components/LandingPage";
 const StorePage = () => {
 	return (
 		<div>
-			<h1>Store Page</h1>
+			<h1 className="hidden">Store Page</h1>
 			<LandingPage />{" "}
 		</div>
 	);

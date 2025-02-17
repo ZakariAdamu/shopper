@@ -10,7 +10,8 @@ body {
 
 
 .hero-bg {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 95%, rgba(239, 252, 252, 0.6) 98%);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 95%, rgba(194, 240, 240, 0.5) 97%); */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 93%, rgba(239, 252, 252, 0.7) 99%);
 }
 
 @media screen and (min-width: 400px) {
