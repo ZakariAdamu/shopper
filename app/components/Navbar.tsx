@@ -21,25 +21,25 @@ const Navbar = () => {
 					<div className="flex items-center justify-between gap-10">
 						<Link
 							href="/"
-							className={`hover:text-red-600 py-3 ${
+							className={`hover:text-[#B63B56] py-3 ${
 								pathname === "/store" &&
-								"text-red-600 border-b border-b-red-600"
+								"text-[#B63B56] border-b border-b-[#B63B56]"
 							}`}
 						>
 							Store
 						</Link>
 						<Link
 							href="/login"
-							className={`hover:text-red-600 py-3 ${
+							className={`hover:text-[#B63B56] py-3 ${
 								pathname === "/login" &&
-								"text-red-600 border-b border-b-red-600"
+								"text-[#B63B56] border-b border-b-[#B63B56]"
 							}`}
 						>
 							login
 						</Link>
 						<Link
 							href="/"
-							className="bg-red-500 text-white py-[10px] px-4 rounded-lg"
+							className="bg-[#B63B56] text-white py-[15px] px-4 rounded-[10px]"
 						>
 							Become a Shopper
 						</Link>
