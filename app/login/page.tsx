@@ -1,4 +1,3 @@
-import React from "react";
 import DesktopLogins from "../components/DesktopLogins";
 import LandingPage from "../components/LandingPage";
 import Footer from "../components/Footer";

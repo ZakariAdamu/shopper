@@ -6,7 +6,15 @@ import { FcGoogle } from "react-icons/fc";
 import Footer from "./Footer";
 
 const LandingPage = () => {
-	const [currentChild, setCurrentChild] = useState(true);
+	interface LandingPageProps {
+		currentChild: boolean;
+		setCurrentChild: React.Dispatch<React.SetStateAction<boolean>>;
+	}
+
+	const [currentChild, setCurrentChild]: [
+		boolean,
+		React.Dispatch<React.SetStateAction<boolean>>,
+	] = useState(true);
 
 	const handleNext = () => {
 		setCurrentChild((prev) => !prev);
