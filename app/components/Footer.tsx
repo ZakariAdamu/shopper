@@ -1,8 +1,7 @@
 import React from "react";
 
-
 // PS: currentChild state is the Google Login component
-const Footer = ({ currentChild }: LoginCardProps) => {
+const Footer = ({ currentChild }: { currentChild: boolean }) => {
 	return currentChild ? (
 		<footer
 			className={`bg-gray-200 text-black bottom-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10`}
