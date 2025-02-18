@@ -64,7 +64,7 @@ const DesktopLogins = () => {
 										value={""}
 										onChange={() => {}}
 										required={true}
-										className="py-5 border-gray-400 rounded-[10px] w-[275px]"
+										className="py-5 border-gray-400 rounded-[10px] w-[245px]"
 									/>
 									<Input
 										type="password"

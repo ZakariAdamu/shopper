@@ -2,11 +2,7 @@ import DesktopLogins from "./components/DesktopLogins";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 
-interface LoginCardProps {
-	currentChild: boolean;
-}
-
-const HomePage = ({ currentChild }: LoginCardProps) => {
+const HomePage = ({ currentChild }: { currentChild: boolean }) => {
 	return (
 		<div className="relative">
 			<LandingPage />

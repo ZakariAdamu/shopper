@@ -60,7 +60,7 @@ const LandingPage = () => {
 						{!currentChild && (
 							// Manual Login component - mobile
 							<>
-								<div className="flex flex-col flex-grow-0 lg:hidden mt-8">
+								<div className="flex flex-col lg:hidden mt-8">
 									<form className="">
 										<input
 											type="email"
