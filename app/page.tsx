@@ -1,15 +1,15 @@
-import Footer from "./components/Footer";
 import DesktopLogins from "./components/DesktopLogins";
+import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 
-export default function Home() {
+export default function Home({ currentChild }: { currentChild: boolean }) {
 	return (
 		<div className="relative">
 			<LandingPage />
-			<div className="absolute left-[5rem] xl:left-[19%] top-[41%] 2xl:left-[23%]">
+			<div className="absolute desktop-login-container top-[39%] left-[10%] xl:left-[5%]">
 				<DesktopLogins />
 			</div>
-			<Footer />
+			<Footer currentChild={currentChild} />
 		</div>
 	);
 }

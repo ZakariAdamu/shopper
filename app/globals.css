@@ -20,3 +20,17 @@ body {
   }
 
 }
+
+@media screen and (min-width: 1387px) {
+  .desktop-login-container {
+    margin-left: 3%;
+  }
+
+}
+
+@media screen and (min-width: 548px) {
+  .mobile-img {
+    border-radius: 50px;
+  }
+
+}

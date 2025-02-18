@@ -1,8 +1,10 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ currentChild }: { currentChild: boolean }) => {
 	return (
-		<footer className="bg-gray-200 text-black bottom-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10">
+		<footer
+			className={`bg-gray-200 text-black bottom-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10 ${!currentChild ? "hidden" : ""}`}
+		>
 			<div className="flex flex-col items-center justify-center gap-2 mt-[3px]">
 				<ul className="flex flex-grow mt-10 gap-5 ">
 					<li className="hover:cursor-pointer">About</li>

@@ -9,16 +9,16 @@ import { MdLocationPin } from "react-icons/md";
 const Navbar = () => {
 	const pathname = usePathname();
 	return (
-		<header>
+		<nav className="bg-white">
 			{/* Desktop display */}
-			<div className="hidden lg:flex sticky top-0 py-2 px-10 gap-2 items-center justify-between mb-0">
+			<div className="hidden lg:flex container w-full sticky m-auto top-0 py-2 items-center justify-between mb-0">
 				{/* Left */}
-				<div className="flex items-center ml-[40%] font-semibold gap-1">
+				<div className="flex items-center justify-end w-full font-semibold gap-1">
 					<MdLocationPin /> <span>Abuja</span>
 				</div>
 				{/* Right */}
-				<div className="right-items w-[45%] flex items-center justify-between">
-					<div className="flex items-center justify-between gap-8">
+				<div className="right-items w-full flex items-center justify-end">
+					<div className="flex items-center justify-between gap-7 mr-9">
 						<Link
 							href="/store"
 							className={`hover:text-[#B63B56] relative pt-4 pb-5 font-semibold px-[6px] ${
@@ -69,7 +69,7 @@ const Navbar = () => {
 					/>
 				</div>
 			</div>
-		</header>
+		</nav>
 	);
 };
 

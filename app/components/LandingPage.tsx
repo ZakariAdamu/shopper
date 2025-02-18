@@ -3,6 +3,7 @@ import { ArrowRightLeft } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
+import Footer from "./Footer";
 
 const LandingPage = () => {
 	const [currentChild, setCurrentChild] = useState(true);
@@ -14,37 +15,39 @@ const LandingPage = () => {
 	return (
 		<>
 			<section className="hero-section hero-bg  w-full h-full pt-4 lg:-mt-2 lg:pt-5">
-				<div className="container shadow-white m-auto max-w-2xl lg:max-w-full xl:max-w-5xl lg:px-10 ">
+				<div className="container shadow-white m-auto w-full lg:px-5 md:w-[90%] h-full lg:w-full">
 					<div className="rounded-md m-4 md:m-0">
 						<h2 className="text-md text-left mb-6 bg-transparent font-semibold pt-2 lg:hidden">
 							Welcome back
 						</h2>
-						<div>
+						{/* mobile image */}
+						<div className="">
 							<Image
 								src="/shopper-hero-img1.png"
 								alt="banner"
 								width={2000}
 								height={1813}
-								className="rounded-[36px] w-full h-[230px] sm:hidden lg:h-[340px]"
+								className="mobile-img sm:hidden h-[250px]"
 							/>
+							{/* desktop image begins from 640px */}
 							<Image
 								src="/hero-perfect.png"
 								alt="banner"
 								width={2000}
 								height={1813}
-								className="rounded-[36px] w-full h-[230px] hidden sm:flex lg:h-[340px]"
+								className="rounded-[36px] w-full hidden sm:flex h-[275px] lg:h-[360px]"
 							/>
 						</div>
 						{currentChild && (
 							// Google Login component - mobile
 							<>
-								<div className="flex flex-col mt-8 justify-center self-center items-center w-full lg:hidden">
-									<button className="flex items-center justify-center gap-3 bg-white text-black py-2 px-4 w-full md:w-[460px] rounded-full border border-gray-600 hover:bg-slate-200">
+								<div className="flex flex-col mt-8 justify-center self-center items-center w-full mx-auto lg:hidden">
+									<button className="flex items-center justify-center gap-3 bg-white text-black py-2 px-4 w-full rounded-full border border-gray-600 hover:bg-slate-200">
 										<FcGoogle className="size-6 left-2.5 top-2.5" /> Login with
 										Google
 									</button>
 									<button
-										className="flex items-center self-start gap-1 mt-5 text-sm cursor-pointer text-muted-foreground md:ml-[6.8rem]"
+										className="flex items-center self-start gap-1 mt-5 text-sm cursor-pointer text-muted-foreground "
 										onClick={handleNext}
 									>
 										{" "}
@@ -76,7 +79,7 @@ const LandingPage = () => {
 										<span className="text-sm cursor-pointer text-muted-foreground">
 											Forgot Password?
 										</span>
-										<button className="bg-black text-white hover:bg-gray-700 hover:text-white mt-7 py-4 w-full rounded-xl">
+										<button className="bg-black text-white hover:bg-gray-700 hover:text-white mt-7 py-3 w-full rounded-[10px]">
 											Proceed
 										</button>
 									</form>
@@ -95,6 +98,7 @@ const LandingPage = () => {
 					</div>
 				</div>
 			</section>
+			<Footer currentChild={currentChild} />
 		</>
 	);
 };
