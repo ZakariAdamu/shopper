@@ -55,6 +55,10 @@ const LandingPage = () => {
 										Click to switch to manual
 									</button>
 								</div>
+								{/* render footer here */}
+								<div className="">
+									<Footer />
+								</div>
 							</>
 						)}
 						{!currentChild && (
@@ -98,7 +102,6 @@ const LandingPage = () => {
 					</div>
 				</div>
 			</section>
-			<Footer currentChild={currentChild} />
 		</>
 	);
 };

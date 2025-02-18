@@ -1,10 +1,9 @@
 import React from "react";
 
-// PS: currentChild state is the Google Login component
-const Footer = ({ currentChild }: { currentChild: boolean }) => {
-	return currentChild ? (
+const Footer = () => {
+	return (
 		<footer
-			className={`bg-gray-200 text-black bottom-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10`}
+			className={`bg-gray-200 text-black bottom-0 left-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10`}
 		>
 			<div className="flex flex-col items-center justify-center gap-2 mt-[3px]">
 				<ul className="flex flex-grow mt-10 gap-5 ">
@@ -22,7 +21,7 @@ const Footer = ({ currentChild }: { currentChild: boolean }) => {
 				</div>
 			</div>
 		</footer>
-	) : null;
+	);
 };
 
 export default Footer;
