@@ -1,7 +1,7 @@
 import HomePage from "../page";
 
-const LoginPage = ({ currentChild }: { currentChild: boolean }) => {
-	return <HomePage currentChild={currentChild} />;
+const LoginPage = () => {
+	return <HomePage />;
 };
 
 export default LoginPage;

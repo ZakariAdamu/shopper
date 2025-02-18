@@ -1,8 +1,11 @@
+"use client";
+import { useState } from "react";
 import DesktopLogins from "./components/DesktopLogins";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 
-const HomePage = ({ currentChild }: { currentChild: boolean }) => {
+const HomePage = () => {
+	const [currentChild, setCurrentChild] = useState(false);
 	return (
 		<div className="relative">
 			<LandingPage />
