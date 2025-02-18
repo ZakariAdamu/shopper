@@ -6,7 +6,7 @@ type LoginCardProps = {
 	currentChild: boolean;
 };
 
-export default function Home({ currentChild }: LoginCardProps) {
+export const Home = ({ currentChild }: LoginCardProps) => {
 	return (
 		<div className="relative">
 			<LandingPage />
@@ -16,4 +16,6 @@ export default function Home({ currentChild }: LoginCardProps) {
 			<Footer currentChild={currentChild} />
 		</div>
 	);
-}
+};
+
+export default Home;
