@@ -1,6 +1,10 @@
 import React from "react";
 
-const Footer = ({ currentChild }: { currentChild: boolean }) => {
+interface LoginCardProps {
+  currentChild: boolean;
+}
+
+const Footer = ({ currentChild }: LoginCardProps) => {
 	return (
 		<footer
 			className={`bg-gray-200 text-black bottom-0 fixed w-full opacity-60 text-sm h-[190px] px-4 pt-10 ${!currentChild ? "hidden" : ""}`}
