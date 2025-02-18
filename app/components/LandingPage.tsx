@@ -1,20 +1,12 @@
 "use client";
 import { ArrowRightLeft } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import Footer from "./Footer";
 
 const LandingPage = () => {
-	interface LandingPageProps {
-		currentChild: boolean;
-		setCurrentChild: React.Dispatch<React.SetStateAction<boolean>>;
-	}
-
-	const [currentChild, setCurrentChild]: [
-		boolean,
-		React.Dispatch<React.SetStateAction<boolean>>,
-	] = useState(true);
+	const [currentChild, setCurrentChild] = useState(true);
 
 	const handleNext = () => {
 		setCurrentChild((prev) => !prev);

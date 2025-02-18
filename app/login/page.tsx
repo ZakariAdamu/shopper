@@ -2,9 +2,6 @@ import DesktopLogins from "../components/DesktopLogins";
 import LandingPage from "../components/LandingPage";
 import Footer from "../components/Footer";
 
-interface LoginCardProps {
-	currentChild: boolean;
-}
 
 const LoginPage = ({ currentChild }: LoginCardProps) => {
 	return (
