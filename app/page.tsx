@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 
 const HomePage = () => {
-	const [currentChild, setCurrentChild] = useState(false);
+	const [currentChild] = useState(false);
 	return (
 		<div className="relative">
 			<LandingPage />
