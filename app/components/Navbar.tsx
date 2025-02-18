@@ -13,9 +13,12 @@ const Navbar = () => {
 			{/* Desktop display */}
 			<div className="hidden lg:flex container w-full sticky m-auto top-0 py-2 items-center justify-between mb-0">
 				{/* Left */}
-				<div className="flex items-center justify-end w-full font-semibold gap-1">
+				<Link
+					href="/"
+					className="flex items-center justify-end w-full font-semibold gap-1"
+				>
 					<MdLocationPin /> <span>Abuja</span>
-				</div>
+				</Link>
 				{/* Right */}
 				<div className="right-items w-full flex items-center justify-end">
 					<div className="flex items-center justify-between gap-7 mr-9">

@@ -2,11 +2,9 @@ import DesktopLogins from "./components/DesktopLogins";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 
-type LoginCardProps = {
-	currentChild: boolean;
-};
 
-export const Home = ({ currentChild }: LoginCardProps) => {
+
+const HomePage = ({ currentChild }: LoginCardProps) => {
 	return (
 		<div className="relative">
 			<LandingPage />
@@ -18,4 +16,4 @@ export const Home = ({ currentChild }: LoginCardProps) => {
 	);
 };
 
-export default Home;
+export default HomePage;

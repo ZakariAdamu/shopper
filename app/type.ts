@@ -1,0 +1,3 @@
+type LoginCardProps = {
+	currentChild: boolean;
+};

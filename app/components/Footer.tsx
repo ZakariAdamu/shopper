@@ -1,9 +1,5 @@
 import React from "react";
 
-interface LoginCardProps {
-  currentChild: boolean;
-}
-
 const Footer = ({ currentChild }: LoginCardProps) => {
 	return (
 		<footer
