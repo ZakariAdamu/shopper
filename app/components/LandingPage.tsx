@@ -1,5 +1,4 @@
 "use client";
-import { ArrowRightLeft } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";

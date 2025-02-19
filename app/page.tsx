@@ -1,15 +1,7 @@
-import DesktopLogins from "./components/DesktopLogins";
 import LandingPage from "./components/LandingPage";
 
 const HomePage = () => {
-	return (
-		<div className="relative">
-			<LandingPage />
-			{/* <div className="absolute desktop-login-container top-[39%]">
-				<DesktopLogins />
-			</div> */}
-		</div>
-	);
+	return <LandingPage />;
 };
 
 export default HomePage;
