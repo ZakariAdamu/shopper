@@ -1,6 +1,4 @@
 "use client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
 import Image from "next/image";
@@ -12,11 +10,11 @@ const DesktopLogins = () => {
 		setCurrentChild((prev) => !prev);
 	};
 	return (
-		<div className="hidden lg:flex">
+		<div className="hidden lg:flex ">
 			{currentChild && (
 				// Google Login component
-				<div className="container m-auto w-[320px] py-7 -mt-[20px]">
-					<div className="bg-white px-7 py-8 rounded-2xl w-full shadow-sm h-[290px] mx-4">
+				<div className="m-auto w-[320px] py-7">
+					<div className="container bg-white login-card px-7 py-8 rounded-2xl  w-full w-sm h-[290px] mx-4">
 						<form>
 							<div className="mt-3">
 								<h2 className="text-lg text-left mb-2 font-semibold">
@@ -32,7 +30,7 @@ const DesktopLogins = () => {
 									Google
 								</button>
 								<button
-									className="flex items-center self-start gap-1 mt-5 text-sm cursor-pointer text-muted-foreground"
+									className="flex items-center self-start gap-1 mt-5 text-sm cursor-pointer text-slate-400"
 									onClick={handleNext}
 								>
 									{" "}
@@ -42,7 +40,7 @@ const DesktopLogins = () => {
 										height={16}
 										alt="switch icon"
 									/>
-									Click to switch to manual
+									<span className="">Click to switch to manual</span>
 								</button>
 							</div>
 						</form>
@@ -51,46 +49,38 @@ const DesktopLogins = () => {
 			)}
 			{!currentChild && (
 				// Manual Login component - Desktop
-				<div className="">
-					<Card className="min-w-[300px] w-[320px] bg-white shadow-sm border-none mt-4">
-						<CardHeader className="gap-1">
-							<CardTitle className="font-semibold ml-2 hidden lg:block">
-								Log in
-							</CardTitle>
-						</CardHeader>
-						<CardContent className="px-2">
-							<div className="flex flex-col ">
-								<form className="w-[385px] h-full px-5">
-									<input
-										type="email"
-										placeholder="name@email.com"
-										disabled={false}
-										required
-										className="px-3 py-2 border border-gray-400 rounded-[10px] w-[245px]"
-									/>
-									<input
-										type="password"
-										placeholder="please enter password"
-										disabled={false}
-										required
-										className="px-3 py-2 mt-5 mb-2 rounded-[10px] border border-gray-400 w-[245px]"
-									/>
+				<div className="m-auto w-[320px] py-7">
+					<div className="container login-card bg-white px-7 pt-4 pb-4 rounded-2xl w-full shadow-sm mx-4">
+						<form>
+							<div className="mt-3">
+								<h2 className="text-lg text-left mb-2 font-semibold">Log in</h2>
+								<input
+									type="email"
+									placeholder="name@email.com"
+									disabled={false}
+									required
+									className="px-3 py-2 border border-gray-400 rounded-[10px] w-[245px]"
+								/>
+								<input
+									type="password"
+									placeholder="please enter password"
+									disabled={false}
+									required
+									className="px-3 py-2 mt-5 mb-2 rounded-[10px] border border-gray-400 w-[245px]"
+								/>
 
-									<span className="text-sm cursor-pointer text-muted-foreground mt-2 pl-1 flex">
-										Forgot Password?
-									</span>
-								</form>
-								<Button
-									variant="outline"
-									size="lg"
-									className="bg-black text-white hover:bg-gray-700 hover:text-white mt-4 w-[135px] ml-5 rounded-full"
-								>
-									Proceed
-								</Button>
+								<span className="text-sm cursor-pointer text-slate-400 mt-2 pl-1 flex">
+									Forgot Password?
+								</span>
 							</div>
+						</form>
+						<div className="flex flex-col justify-center -ml-4 mt-1">
+							<button className="bg-black text-white py-[7px] hover:bg-gray-700 hover:text-white mt-4 w-[135px] ml-4 rounded-full">
+								Proceed
+							</button>
 
 							<button
-								className="flex items-center ml-4 gap-1 mt-2 text-sm cursor-pointer text-muted-foreground"
+								className="flex items-center ml-4 gap-1 mt-3 text-sm cursor-pointer text-slate-400"
 								onClick={handleNext}
 							>
 								<Image
@@ -101,8 +91,8 @@ const DesktopLogins = () => {
 								/>
 								<span className="">Click to login with google</span>
 							</button>
-						</CardContent>
-					</Card>
+						</div>
+					</div>
 				</div>
 			)}
 		</div>

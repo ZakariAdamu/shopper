@@ -13,6 +13,12 @@
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 93%, rgba(239, 252, 252, 0.7) 99%);
 }
 
+.login-card {
+  -webkit-box-shadow: -1px 14px 65px -14px rgba(191, 224, 220, 0.55);
+  -moz-box-shadow: -1px 14px 65px -14px rgba(191, 224, 220, 0.55);
+  box-shadow: -1px 14px 65px -14px rgba(191, 224, 220, 0.55);
+}
+
 @media screen and (min-width: 400px) {
   footer {
     display: none;

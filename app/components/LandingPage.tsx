@@ -60,7 +60,6 @@ const LandingPage = () => {
 										Click to switch to manual
 									</button>
 								</div>
-								{/* render footer here */}
 								<div className="">
 									<Footer />
 								</div>
@@ -110,7 +109,7 @@ const LandingPage = () => {
 							</>
 						)}
 					</div>
-					<div className="absolute top-[37%] left-[5.2%]">
+					<div className="absolute top-[33%] left-[5.2%]">
 						<DesktopLogins />
 					</div>
 				</div>
