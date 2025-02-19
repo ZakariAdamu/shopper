@@ -11,7 +11,7 @@ const Navbar = () => {
 	return (
 		<nav className="bg-white">
 			{/* Desktop display */}
-			<div className="hidden lg:flex container w-full sticky m-auto top-0 py-2 items-center justify-between mb-0">
+			<div className="hidden lg:flex container w-full sticky m-auto top-0 py-2 items-center justify-between 2xl:w-[81%] mb-0">
 				{/* Left */}
 				<Link
 					href="/"

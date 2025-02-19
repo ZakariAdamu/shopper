@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import Footer from "./Footer";
+import DesktopLogins from "./DesktopLogins";
 
 const LandingPage = () => {
 	const [currentChild, setCurrentChild] = useState(true);
@@ -15,7 +16,7 @@ const LandingPage = () => {
 	return (
 		<>
 			<section className="hero-section hero-bg  w-full h-full pt-4 lg:-mt-2 lg:pt-5">
-				<div className="container shadow-white m-auto w-full lg:px-5 md:w-[90%] h-full lg:w-full">
+				<div className="container relative shadow-white m-auto w-full lg:px-5 md:w-[90%] 2xl:w-[81%] h-full lg:w-full">
 					<div className="rounded-md m-4 md:m-0">
 						<h2 className="text-md text-left mb-6 bg-transparent font-semibold pt-2 lg:hidden">
 							Welcome back
@@ -35,7 +36,7 @@ const LandingPage = () => {
 								alt="banner"
 								width={2000}
 								height={1813}
-								className="rounded-[36px] w-full hidden sm:flex h-[275px] lg:h-[360px]"
+								className="rounded-[36px] w-full hidden sm:flex h-[275px] lg:h-[360px] max-w-[1300px] 2xl:ml-auto 2xl:mr-4"
 							/>
 						</div>
 						{currentChild && (
@@ -51,7 +52,12 @@ const LandingPage = () => {
 										onClick={handleNext}
 									>
 										{" "}
-										<ArrowRightLeft size={15} />
+										<Image
+											src="/switch-horizontal.png"
+											width={16}
+											height={16}
+											alt="switch icon"
+										/>{" "}
 										Click to switch to manual
 									</button>
 								</div>
@@ -93,12 +99,20 @@ const LandingPage = () => {
 										onClick={handleNext}
 									>
 										{" "}
-										<ArrowRightLeft size={15} />
+										<Image
+											src="/switch-horizontal.png"
+											width={16}
+											height={16}
+											alt="switch icon"
+										/>{" "}
 										<span className="">Click to switch to Google</span>
 									</button>
 								</div>
 							</>
 						)}
+					</div>
+					<div className="absolute top-[37%] left-[5.2%]">
+						<DesktopLogins />
 					</div>
 				</div>
 			</section>

@@ -4,13 +4,12 @@
 
 
 
-body {
+/* body {
   min-height: fit-content;
-}
+} */
 
 
 .hero-bg {
-  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 95%, rgba(194, 240, 240, 0.5) 97%); */
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 93%, rgba(239, 252, 252, 0.7) 99%);
 }
 
@@ -21,12 +20,6 @@ body {
 
 }
 
-@media screen and (min-width: 1387px) {
-  .desktop-login-container {
-    margin-left: 3%;
-  }
-
-}
 
 @media screen and (min-width: 548px) {
   .mobile-img {
